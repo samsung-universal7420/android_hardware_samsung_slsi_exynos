@@ -68,6 +68,8 @@ ifeq ($(BOARD_USES_DUAL_DISPLAY), true)
 LOCAL_SRC_FILES += ExynosSecondaryDisplay.cpp
 endif
 
+LOCAL_CFLAGS += -Wno-format
+
 include $(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/libdisplaymodule/Android.mk
 
 LOCAL_MODULE := libexynosdisplay

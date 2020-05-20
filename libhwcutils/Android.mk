@@ -38,6 +38,7 @@ ifeq ($(BOARD_USES_FB_PHY_LINEAR),true)
 endif
 LOCAL_CFLAGS += -DLOG_TAG=\"hwcutils\"
 LOCAL_CFLAGS += -DHLOG_CODE=4
+LOCAL_CFLAGS += -Wno-format
 LOCAL_C_INCLUDES := \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
 	$(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/include \

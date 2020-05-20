@@ -19,5 +19,7 @@ LOCAL_PRELINK_MODULE := false
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_SRC_FILES := libcec.c
 
+LOCAL_CFLAGS += -Wno-unused-function
+
 LOCAL_MODULE := libcec
 include $(BUILD_SHARED_LIBRARY)
